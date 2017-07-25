@@ -1,0 +1,33 @@
+geom-differ
+===========
+
+Calculate difference between two GeoJSON or Shapefiles. Can be used for change detection between to similar data sets.
+
+
+Dependencies
+============
+
+    pip install fiona pyproj shapely rtree
+
+
+Example
+=======
+
+  python geom_difference.py \
+    --a-file=administrative_current.geojson \
+    --b-file=administrative_previous.geojson \
+    --result-file=administrative_diff.geojson \
+    --src-srs='EPSG:25832' \
+    --buffer=500
+
+
+The result is always a GeoJSON in 'EPSG:4326'.
+The resulting geometries can be buffered with ``--buffer``. The buffer needs to be in the same unit as ``--src-srs``.
+
+Status
+======
+
+The code is provided "AS IS". Do not expect any updates or new features.
+Issues are disabled and we don't provide support by any other means.
+
+However, you are free to use and modify the tool under the terms of the Apache License 2.0 (see LICENSE).
