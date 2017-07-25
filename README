@@ -1,5 +1,5 @@
-geom-differ
-===========
+geom-difference
+===============
 
 Calculate difference between two GeoJSON or Shapefiles. Can be used for change detection between to similar data sets.
 
