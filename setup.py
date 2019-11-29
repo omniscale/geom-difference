@@ -4,12 +4,12 @@ import pkg_resources
 
 setup(
     name='geom_difference',
-    version='0.1.0',
+    version='0.1.1',
     description='Calculate geometric differences of two GeoJSON/Shapefiles.',
     long_description='',
     url='https://github.com/omniscale/geom-difference',
-    author='Oliver Tonnhofer',
-    author_email='olt@omniscale.de',
+    author='Omniscale',
+    author_email='info@omniscale.de',
     license='Apache Software License 2.0',
     py_modules=['geom_difference'],
     include_package_data=True,
@@ -28,6 +28,7 @@ setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.6",
         "Topic :: Scientific/Engineering :: GIS",
     ],
 )
